@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .data{
+            height:650px;
+            width:70%;
+            background-color:lightgrey;
+            margin-left: 15%;
+            margin-top: 50px;
+        }
+        h1{
+            padding:15px;
+        }
+        table{
+            width : 90%;
+            height:400px;
+            margin-left: 5%;
+            margin-top:50px;
+        }
+        th,td{
+            height:10px;
+            text-align: center;
+        }
+        input{
+            height:30px;
+            margin-left: 15px;
+            text-indent:20px;
+            margin-top: 10px;
+        }
+        button{
+            height:30px;
+            margin-left: 10px;
+            width:10%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "data">
+        <h1> BUS DETAILS </h1>
+        <div class = "form ">
+            <form>
+                <input type = "text" required placeholder="Name" id="pname"/>
+                <input type = "text" required placeholder="Source" id="psource"/>
+                <input type = "text" required placeholder="Destination" id="pdestination"/>
+                <input type = "text" required placeholder="Number" id="pnumber"/>
+                <input type = "number" required placeholder="Passenger capacity" id="ppc"/>
+                <button type = "submit" onclick = "addBus(event)"> Add Buses </button>
+            </form>
+        </div>
+        <div class = "search">
+            <input type = "text" placeholder="search by source" onkeyup="searchBySource()" id = "search"/>
+            <input type = "text" placeholder="search by destination" onkeyup="searchByDestination()" id = "sch"/>
+        </div>
+        <table border = "2">
+            <thead>
+                <tr>
+                    <th> Sno </th>
+                    <th> Name </th>
+                    <th> Source </th>
+                    <th> Destination </th>
+                    <th> Number </th>
+                    <th> Passenger capacity</th>
+                </tr>
+            </thead>
+            <tbody class = "bdata"></tbody>
+        </table>
+    </div>
+
+    <script src = "ques2.js"></script>
+</body>
+</html>

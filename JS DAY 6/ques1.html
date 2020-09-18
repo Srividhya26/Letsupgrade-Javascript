@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Person details </title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        .page{
+            height: 500px;
+            width: 70%;
+            background-color: tan;
+            margin-left: 15%;
+            margin-top: 100px;
+        }
+        h1{
+            padding:15px;
+        }
+        .table{
+            width:90%;
+            margin-left: 5%;
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input{
+            height : 40px;
+            text-indent:20px;
+        }
+        .search{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "page">
+        <h1> PERSON DETAILS </h1>
+        <div class = "search">
+            <input type = "text" placeholder="Search the details" onkeyup="searchByNameCity()" id = "search"/>
+        </div>
+        <table border = "1" class = "table">
+            <thead>
+                <tr>
+                    <th> SNo </th>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> City </th>
+                    <th> Salary </th>
+                    <th> Delete </th>
+                </tr>
+            </thead>
+            <tbody class = "tdata"></tbody>
+        </table>
+    </div>
+   <script src = "ques1.js"></script>
+</body>
+</html>
