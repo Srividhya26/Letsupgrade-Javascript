@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SHOPPING WEBSITE </title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+        }
+        .heading{
+            height: 200px;
+            width: 90%;
+            background-color:gray;
+            margin-top:50px;
+            margin-left: 5%;
+        }
+        h1{
+            padding: 10px;
+            margin-left: 50px;
+        }
+        .search{
+            width: 95%;
+            height: 30px;
+            margin-left:25px ;
+            margin-top: 20px;
+            font-size: 25px;
+            outline: none;
+        }
+        .products{
+            height:auto;
+            width:90%;
+            background-color:lightgray;
+            margin-left:5%;
+
+        }
+        input{
+            margin-left : 10px;
+            margin-top: 10px;
+        }
+        .filter{
+            padding:10px;
+        }
+        .productwrapper{
+            height:auto;
+            width:90%;
+            margin-left: 5%;
+            margin-bottom:50px;
+        }
+        
+        .product{
+            height:auto;
+            width:25%;
+            margin-left: 70px;
+            margin-top:50px;
+            margin-bottom: 20px;
+            display:inline-block;
+            border:1px solid gray;
+        }
+        .image{
+            height:400px;
+            width:100%;
+            overflow: hidden;
+        }
+        h3,p{
+            padding: 5px;
+            padding-left: 10px;
+        }
+        button{
+            padding:5px;
+        }
+        .count{
+            padding:10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+        <div class = "heading">
+            <img width="100px" src = "https://i.pinimg.com/originals/2a/d7/32/2ad73224f0007d62c730ba31cccbd2ca.jpg"/>
+            <h1> Infinity Shopping </h1>
+            <div>
+                <input type = "text" placeholder="Search for products" class = "search"/>
+            </div>
+        </div>
+        <div class = "products">
+            <input type = "text" class = "filter" id = "minp" placeholder="minimumPrice"/>
+            <input type = "text" class = "filter" id="maxp" placeholder="maximumPrice"/>
+            <button onclick = "filterProduct()"> FILTER </button>
+            <div class = "productwrapper" id = "productwrapper">
+            </div>
+        </div>
+
+        <div class = "products">
+            <h1> CART </h1>
+            <div class = "productwrapper" id = "cart">
+            </div>
+        </div>
+        
+    <script src = "ques1.js"></script>
+</body>
+</html>
